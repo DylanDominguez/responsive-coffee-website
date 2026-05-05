@@ -1,0 +1,94 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/poppins.regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+:root{
+    /* Colors */
+    --white-color: #fff;
+    --dark-color: #252525;
+    --primary-color: #3b141c;
+    --secondary-color: #f3961c;
+    --light-pink-color: #faf4f5;
+    --medium-gray-color: #ccc;
+
+    /* Font-size */
+    --font-size-s: 0.9rem;
+    --font-size-n: 1rem;
+    --font-size-m: 1.12rem;
+    --font-size-l: 1.5rem;
+    --font-size-xl: 2rem;
+    --font-size-xxl: 2.3rem;
+
+    /* Font-weight */
+    --font-weight-normal: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+
+    /* Border-radius */
+    --border-radius-s: 8px;
+    --border-radius-m: 30px;
+    --border-radius-circle: 50%;
+
+    /* Site max width */
+    --site-max-width: 1400px;
+}
+
+/* Estilos para todo el sitio web */
+ul{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+button{
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+
+img{
+    width: 100%;
+}
+
+/* Seccion header */
+header{
+    background-color: var(--primary-color);
+}
+
+/* *el contenido del Navbar Se convierte en flex */
+header .navbar{
+    display: flex;
+    padding: 20px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* El navbar que contiene a la etiqueta "a" y dentro contiene al h2 con el titulo Coffee*/
+.navbar .nav-logo .logo-text{
+    color: var(--white-color);
+}
+
+/* el "ul" dentro del navbar se convierte en flex*/
+.navbar .nav-menu{
+    display: flex;
+    gap: 10px;
+}
+
+/* Todas las etiquetas "a" que están dentro del "ul" que tiene el navbar */
+.navbar .nav-menu .nav-link{
+    color: var(--white-color);
+}
