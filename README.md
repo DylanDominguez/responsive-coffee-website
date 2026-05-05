@@ -5,6 +5,7 @@ Este proyecto es una página web de una cafetería desarrollada como parte de mi
 ## 🧩 Tecnologías utilizadas
 - HTML5
 - CSS3
+- Javascript
 - Flexbox
 - Media Queries (Responsive Design)
 
