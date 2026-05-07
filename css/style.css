@@ -78,6 +78,7 @@ img{
     max-width: var(--site-max-width);
 }
 
+/* Para que los titulos "h2" de cada seccion tengan un estilo unico*/
 .section-title{
     text-align: center;
     padding: 60px 0 100px;
@@ -262,6 +263,61 @@ header .navbar{
 .about-section .social-link-list .social-link:hover{
     color: var(--secondary-color);
 }
+
+/* Seccion Menu */
+
+.menu-section{
+    color: var(--white-color);
+    background-color: var(--dark-color);
+    padding: 50px 0 100px;
+}
+
+.menu-section .menu-list{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 110px;
+    justify-content: space-between;
+}
+
+.menu-section .menu-list .menu-item{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: calc(100% / 3 - 110px);
+    justify-content: space-between;
+    text-align: center;
+}
+
+.menu-section .menu-list .menu-item .menu-image{
+    max-width: 83%;
+    aspect-ratio: 1;
+    margin-bottom: 15px;
+    object-fit: contain;
+}
+
+.menu-section .menu-list .menu-item .name{
+    margin: 12px 0;
+    font-size: var(--font-size-l);
+    font-weight: var(--font-weight-semibold);
+}
+
+.menu-section .menu-list .menu-item .text{
+    font-size: var(--font-size-m);
+}
+
+@media screen and (max-width: 1024px){
+
+    /*Seccion Menu*/
+    .menu-section .menu-list{
+        gap: 60px;
+    }
+
+    .menu-section .menu-list .menu-item{
+        width: calc(100% / 3 - 60px);
+    }
+}
+
 /* !=================================MEDIA QUERIES=================================*/
 @media screen and (max-width: 900px) {
     :root{
@@ -368,5 +424,29 @@ header .navbar{
         height: 100%;
         max-width: 250px;
         aspect-ratio: 1;
+    }
+
+    /* Seccion Menu */
+    .menu-section .menu-list{
+        gap: 30px;
+    }
+
+    .menu-section .menu-list .menu-item{
+        width: calc(100% / 2 - 30px);
+    }
+
+    .menu-section .menu-list .menu-item .menu-image{
+        max-width: 200px;
+    }
+}
+
+@media screen and (max-width: 640px){
+    /*Seccion Menu*/
+    .menu-section .menu-list{
+        gap: 60px;
+    }
+
+    .menu-section .menu-list .menu-item{
+        width: 100%;
     }
 }
