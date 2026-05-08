@@ -8,3 +8,50 @@ menuOpenButton.addEventListener("click", () => {
 
 /* Cuando se le da click al boton X, le quita la clase "show-mobile-menu", que hace desaparecer el menu*/
 menuCloseButton.addEventListener("click", () => menuOpenButton.click());
+
+/* Para el slider en la seccion "Testimonials" */
+/*
+! Es importante ver la configuracion que tiene, porque se coloca:
+! const swiper = new Swiper('.slider-wrapper'.....
+! Es importante conocer que: .slider-wrapper es un div propio que está en esta estructura HTML 
+*/
+const swiper = new Swiper('.slider-wrapper', {
+  loop: true,
+  //Para que cuando el cursor del mouse se acerque a cualquier item, se cambie de flecha a una mano
+  grabCursor: true,
+  //Espacio entre cada elemento del slider
+  spaceBetween: 25,
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+    //Para que cuando se da click a los botones de abajo del slider, tambien cambie de item
+    clickable: true,
+    dynamicBullets: true,
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  /*
+  ? Para que el slider se adapte de manera Resposiva
+  */
+  breakpoints: {
+    //De 0px hasta 767px de ancho
+    0: {
+        slidesPerView: 1
+    },
+    //De 768px hasta 1023px de ancho
+    768: {
+        slidesPerView: 2
+    },
+    //De 1024px de ancho a más
+    1024: {
+        slidesPerView: 3
+    },
+  }
+
+});

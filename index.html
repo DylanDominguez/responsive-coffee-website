@@ -6,6 +6,8 @@
     <title>Tienda Cafetería | DylanDev</title>
     <!--Link de Font-Awesome-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <!--Link para hacer slider de imagenes ..... más abajo se coloca un script -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -141,46 +143,95 @@
         <section class="testimonials-section">
             <h2 class="section-title">Testimonials</h2>
             <div class="section-content">
-                <div class="slider-container">
+                <!--Se coloca segunda clase "swiper" para que funcione el slider-->
+                <div class="slider-container swiper">
                     <div class="slider-wrapper">
-                        <ul class="testimonials-list">
+                        <!--Se coloca segunda clase "swiper-wrapper" para que funcione el slider-->
+                        <ul class="testimonials-list swiper-wrapper">
                             <!--Item 1-->
-                            <li class="testimonial">
+                            <!--Aqui se coloca el slide, como segunda clase llamada "swiper-slide" para cada elemento "li"-->
+                            <li class="testimonial swiper-slide">
                                 <img src="images/user-1.jpg" alt="User" class="user-image">
                                 <h3 class="name">Sarah Johnson</h3>
                                 <i class="feedback">"Loved the French roast. Perfectly balanced and rich. Will order again!"</i>
                             </li>
 
-                            <!--Item 1-->
-                            <li class="testimonial">
+                            <!--Item 2-->
+                            <li class="testimonial swiper-slide">
                                 <img src="images/user-2.jpg" alt="User" class="user-image">
                                 <h3 class="name">James Wilson</h3>
                                 <i class="feedback">"Great espresso blend! Smooth and bold flavor. Fast shipping too!"</i>
                             </li>
 
-                            <!--Item 1-->
-                            <li class="testimonial">
+                            <!--Item 3-->
+                            <li class="testimonial swiper-slide">
                                 <img src="images/user-3.jpg" alt="User" class="user-image">
                                 <h3 class="name">Michael Brown</h3>
                                 <i class="feedback">"Fantastic mocha flavor. Fresh and aromatic. Quick shipping!"</i>
                             </li>
 
-                            <!--Item 1-->
-                            <li class="testimonial">
+                            <!--Item 4-->
+                            <li class="testimonial swiper-slide">
                                 <img src="images/user-4.jpg" alt="User" class="user-image">
                                 <h3 class="name">Emily Harris</h3>
                                 <i class="feedback">"Excellent quality! Fresh beans and quick delivery. Highly recommend."</i>
                             </li>
 
-                            <!--Item 1-->
-                            <li class="testimonial">
+                            <!--Item 5-->
+                            <li class="testimonial swiper-slide">
                                 <img src="images/user-5.jpg" alt="User" class="user-image">
                                 <h3 class="name">Anthony Thompson</h3>
                                 <i class="feedback">"Best decaf I've tried! Smooth and flavorful. Arrived promptly."</i>
                             </li>
                         </ul>
+
+                        <!--Para que aparezcan botones para pasar a la siguiente imagen-->
+                        <!--La segunda clase como: "swiper-pagination, swiper-button-prev, swiper-button-next" son parte de la misma pagina de Swipper-->
+                        <div class="swiper-pagination"></div>
+
+                        <!--La primera clase "swiper-slide-button" es para estilizarlo con mis propios colores y diseños-->
+                        <div class="swiper-slide-button swiper-button-prev"></div>
+                        <div class="swiper-slide-button swiper-button-next"></div>
                     </div>
                 </div>
+            </div>
+        </section>
+
+        <!--Seccion Gallery-->
+        <section class="gallery-section">
+            <h2 class="section-title">Gallery</h2>
+            <div class="section-content">
+                <ul class="gallery-list">
+                    <!--Item 1-->
+                    <li class="gallery-item">
+                        <img src="images/gallery-1.jpg" alt="Gallery" class="gallery-image">
+                    </li>
+
+                    <!--Item 2-->
+                    <li class="gallery-item">
+                        <img src="images/gallery-2.jpg" alt="Gallery" class="gallery-image">
+                    </li>
+
+                    <!--Item 3-->
+                    <li class="gallery-item">
+                        <img src="images/gallery-3.jpg" alt="Gallery" class="gallery-image">
+                    </li>
+
+                    <!--Item 4-->
+                    <li class="gallery-item">
+                        <img src="images/gallery-4.jpg" alt="Gallery" class="gallery-image">
+                    </li>
+
+                    <!--Item 5-->
+                    <li class="gallery-item">
+                        <img src="images/gallery-5.jpg" alt="Gallery" class="gallery-image">
+                    </li>
+
+                    <!--Item 6-->
+                    <li class="gallery-item">
+                        <img src="images/gallery-6.jpg" alt="Gallery" class="gallery-image">
+                    </li>
+                </ul>
             </div>
         </section>
 
@@ -188,6 +239,10 @@
 
 
     <footer></footer>
+
+    <!--Script de Swipper-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
     <script src="js/script.js"></script>
 </body>
 </html>
