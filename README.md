@@ -1,24 +1,51 @@
 # ☕ Responsive Coffee Website
 
-Este proyecto es una página web de una cafetería desarrollada como parte de mi aprendizaje en desarrollo web.
+Una página web moderna y responsiva para una cafetería, desarrollada como parte de mi aprendizaje en desarrollo frontend.
+
+---
 
 ## 🧩 Tecnologías utilizadas
 - HTML5
 - CSS3
-- Javascript
+- JavaScript
 - Flexbox
-- Media Queries (Responsive Design)
+- Media Queries
+
+---
 
 ## 📱 Características
-- Diseño responsive (mobile-first)
-- Adaptado a diferentes tamaños de pantalla
+- Diseño totalmente responsive
+- Adaptado para dispositivos móviles, tablets y desktop
+- Menú hamburguesa interactivo
 - Layout moderno utilizando Flexbox
+- Navegación fluida y estructura semántica
+
+---
 
 ## 🎯 Objetivo del proyecto
-Practicar la creación de páginas web responsivas y mejorar mis habilidades en diseño y maquetación.
+Este proyecto fue desarrollado para practicar:
+- Diseño responsive
+- Maquetación moderna con Flexbox
+- Uso de JavaScript en interacciones del menú móvil
+- Organización de componentes web
 
-## 📌 Estado
-En desarrollo 🚧 (seguiré mejorándolo)
+---
+
+## 📚 Lo que aprendí
+Durante este proyecto mejoré mis conocimientos en:
+- Responsive Design
+- Flexbox
+- Media Queries
+- Manipulación básica del DOM con JavaScript
+- Organización de proyectos frontend
+
+---
+
+## 📌 Estado del proyecto
+✅ Finalizado  
+🔧 Abierto a futuras mejoras y optimizaciones
+
+---
 
 ## 🙌 Autor
-- Dylan Dominguez Perez
+**Dylan Dominguez Perez**
